@@ -1,46 +1,63 @@
-import { Environment, OrbitControls } from "@react-three/drei";
+import { ContactShadows, Environment, Lightformer, OrbitControls, useGLTF } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import { useEffect } from "react";
-import { useRef } from "react";
 
-function PlaneSurface() {
-  
-  const planeRef = useRef()
+function CertificateModel() {
+  const { scene } = useGLTF('/certficitat.glb')
 
-  useEffect(() => {
-    
-    if(planeRef.current) {
-      planeRef.current.rotation.x = -Math.PI / 2
-      planeRef.current.position.y = -1
+  scene.traverse((child) => {
+    if (child.isMesh) {
+      child.castShadow = true
+      child.receiveShadow = true
+      child.material.transparent = false
+      child.material.opacity = 1
+      child.rotation.y = Math.PI 
+      child.position.y = -1
     }
-
-  }, [planeRef.current])
+  })
 
   return (
-    <mesh ref={planeRef}>
-      <planeGeometry args={[5,5]} />
-      <meshStandardMaterial />
-    </mesh>
+    <primitive 
+      object={scene} 
+      castShadow 
+      receiveShadow 
+    />
   )
 }
 
-function BoxCube() {
-  return (
-    <mesh>
-        <boxGeometry />
-        <meshStandardMaterial />
-    </mesh>
-  )
-}
 
 export default function Experience() {
   
   return (
-    <div className="w-full h-full">
-        <Canvas>
-          <PlaneSurface />
-          <BoxCube />
-          <Environment preset="city" />
+    <div className="w-full h-full bg-black">
+        <Canvas shadows camera={{ position: [0, 1.5, 3] }}>
+        <ambientLight intensity={0.2} />
+          
+          <directionalLight 
+          castShadow
+          position={[0, 2, 2]}
+          intensity={1}
+          color="white" 
+          shadow-mapSize-width={2048}
+          shadow-mapSize-height={2048}
+          shadow-camera-near={0.1} // Added these
+          shadow-camera-far={20}
+          />
+
+          {/* <mesh rotation={[- Math.PI / 2,0,0]} receiveShadow>
+            <planeGeometry args={[5,5]} />
+            <meshStandardMaterial color="lime" />
+          </mesh> */}
+
+          {/* <mesh position={[0,0.5,0]} castShadow>
+            <boxGeometry args={[1,1,1]} />
+            <meshStandardMaterial color="orange" />
+          </mesh> */}
+
+          <CertificateModel />
+
+          <Environment preset="sunset" />
+          <ContactShadows position={[0, -0.485, 0]} scale={5} blur={1.5} far={1} />
           <OrbitControls />
         </Canvas>
     </div>
