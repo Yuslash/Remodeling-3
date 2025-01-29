@@ -3,13 +3,13 @@
         transform: translateY(0px) translateX(0px);
     }
     25% {
-        transform: translateY(-5px) translateX(3px);
+        transform: translateY(-15px) translateX(13px);
     }
     50% {
-        transform: translateY(5px) translateX(-3px);
+        transform: translateY(15px) translateX(-13px);
     }
     75% {
-        transform: translateY(-3px) translateX(-5px);
+        transform: translateY(-13px) translateX(-15px);
     }
     100% {
         transform: translateY(0px) translateX(0px);

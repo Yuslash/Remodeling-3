@@ -44,3 +44,36 @@
     background: rgba(0, 15, 1, 0.50);
     backdrop-filter: blur(145.8000030517578px);
 }
+
+.game-title {
+    color: #79A373;
+    font-family: Jost;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.game-value {
+    color: #FFF;
+    text-align: start;
+    font-family: Jost;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.event-select-btn {
+    padding: 8px;
+    border-radius: 7px;
+    border: 1px solid #050702;
+    background-color: #215302;
+    color: #000;
+    font-family: Jost;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    cursor: pointer;
+}
