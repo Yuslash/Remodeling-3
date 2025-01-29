@@ -1,16 +1,14 @@
 @import "tailwindcss";
 
-.rotating-svg-container #sibi {
-    transform-origin: 214px 88.3881px;  /* Set the pivot point to rotate around */
-    animation: rotateAnimation 3s linear infinite;  /* Rotate forever, 3s per cycle */
+/* Target the path with id 'sibi' inside the SVG */
+.rotating-svg-container svg #sibi {
+    transform-origin: center center;
+    transition: transform 0.3s ease;
   }
   
-  @keyframes rotateAnimation {
-    0% {
-      transform: rotate(0deg);  /* Start at 0 degrees */
-    }
-    100% {
-      transform: rotate(360deg);  /* End at 360 degrees */
-    }
+  /* Hover effect on the path 'sibi' */
+  .rotating-svg-container svg #sibi:hover {
+    transform: translateY(-30px); /* Move the 'sibi' path up on hover */
   }
+  
   

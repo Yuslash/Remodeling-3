@@ -1,0 +1,13 @@
+.floating-path {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  @keyframes hover-move {
+    0% { transform: translate(0, 0); }
+    50% { transform: translate(30px, -30px); }
+    100% { transform: translate(0, 0); }
+  }
+
+  .floating-path:hover {
+    animation: hover-move 0.6s ease-in-out forwards;
+  }
