@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
 
 .events-navbar {
-    background: #2B295B;
+    background: rgba(0, 15, 1, 0.50);
+    backdrop-filter: blur(0.2);
 }
 
 .company-name {
@@ -34,9 +35,9 @@
     line-height: 100%; 
 }
 
-/* .acting-body {
+.acting-body {
     background: radial-gradient(31.38% 31.38% at 50% 50%, #95FF00 0%, #050C06 100%);
-} */
+}
 
 .acting-card {
     border-radius: 15px;
