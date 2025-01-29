@@ -7,20 +7,20 @@ export default function EventSvg() {
     return (
         <svg width="182" height="262" viewBox="0 0 182 262" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g id="Frame 83" filter="url(#filter0_i_152_4462)">
-        <g clip-path="url(#clip0_152_4462)">
+        <g clipPath="url(#clip0_152_4462)">
         <rect x="1" y="1" width="180" height="260" rx="15" fill="black"/>
         <g id="Vector 4" filter="url(#filter1_f_152_4462)">
-        <path d="M88.3584 18.6058C88.3584 18.6058 88.7491 18.005 88.496 18.557L178.778 -13.4873C178.778 -13.4873 152.69 8.43704 127.96 58.713C103.231 108.989 40.8425 135.569 40.8425 135.569L5.21938 121.965C5.21938 121.965 37.1319 108.73 64.8283 60.4639C84.0441 26.9769 87.9225 19.8077 88.496 18.557L88.3584 18.6058Z" fill="#5A9B00" fill-opacity="0.25"/>
+        <path d="M88.3584 18.6058C88.3584 18.6058 88.7491 18.005 88.496 18.557L178.778 -13.4873C178.778 -13.4873 152.69 8.43704 127.96 58.713C103.231 108.989 40.8425 135.569 40.8425 135.569L5.21938 121.965C5.21938 121.965 37.1319 108.73 64.8283 60.4639C84.0441 26.9769 87.9225 19.8077 88.496 18.557L88.3584 18.6058Z" fill="#5A9B00" fillOpacity="0.25"/>
         <path d="M88.3584 18.6058C88.3584 18.6058 92.5248 12.1977 64.8284 60.4639C37.1319 108.73 5.21938 121.965 5.21938 121.965L40.8425 135.569C40.8425 135.569 103.231 108.989 127.96 58.713C152.69 8.43704 178.778 -13.4873 178.778 -13.4873C143.467 -0.95414 123.669 6.07268 88.3584 18.6058Z" stroke="black"/>
         </g>
         <g id="Group 219">
-        <path id="Vector 5" d="M63.0344 -1.1875C63.0344 -1.1875 56.3841 26.5936 48.6138 42.8751C23.8938 94.672 4 101 4 101" stroke="url(#paint0_linear_152_4462)" stroke-width="3"/>
-        <path id="Vector 6" d="M119.366 -4C119.366 -4 136.136 15.6287 146.855 29.9844C164.881 54.1251 178.4 98.1876 178.4 98.1876" stroke="url(#paint1_linear_152_4462)" stroke-width="3"/>
+        <path id="Vector 5" d="M63.0344 -1.1875C63.0344 -1.1875 56.3841 26.5936 48.6138 42.8751C23.8938 94.672 4 101 4 101" stroke="url(#paint0_linear_152_4462)" strokeWidth="3"/>
+        <path id="Vector 6" d="M119.366 -4C119.366 -4 136.136 15.6287 146.855 29.9844C164.881 54.1251 178.4 98.1876 178.4 98.1876" stroke="url(#paint1_linear_152_4462)" strokeWidth="3"/>
         </g>
         <g id="magnet">
-        <rect id="Rectangle 164" x="36.0858" y="94.5" width="77.6604" height="77.6604" rx="21" transform="rotate(-45 36.0858 94.5)" fill="url(#paint2_linear_152_4462)" stroke="url(#paint3_linear_152_4462)" stroke-width="2"/>
+        <rect id="Rectangle 164" x="36.0858" y="94.5" width="77.6604" height="77.6604" rx="21" transform="rotate(-45 36.0858 94.5)" fill="url(#paint2_linear_152_4462)" stroke="url(#paint3_linear_152_4462)" strokeWidth="2"/>
         <path id="Rectangle 165" d="M64.0269 108.57C56.2164 100.759 56.2164 88.0961 64.0269 80.2856L77.0836 67.2289C84.8941 59.4184 97.5574 59.4184 105.368 67.2289L118.425 80.2856C126.235 88.0961 126.235 100.759 118.425 108.57L105.368 121.627C97.5573 129.437 84.8941 129.437 77.0836 121.627L64.0269 108.57Z" fill="url(#paint4_linear_152_4462)"/>
-        <g id="hacker 1" clip-path="url(#clip1_152_4462)">
+        <g id="hacker 1" clipPath="url(#clip1_152_4462)">
         <g id="SVGRepo_iconCarrier">
         <g id="Group">
         <path id="Vector" d="M95.8671 92.2555C95.5885 90.6202 95.284 88.8436 95.1913 88.3384C94.9647 87.1056 93.3414 86.4165 92.1352 87.3048C91.5028 87.7713 90.937 87.8046 90.6371 87.8046C90.3373 87.8046 90.0047 87.8713 89.139 87.3048C87.8855 86.4851 86.3095 87.1056 86.0829 88.3384C85.9903 88.8436 85.6857 90.6202 85.4072 92.2555C82.0178 92.68 79.7188 93.5057 79.7188 94.454C79.7188 95.8375 84.6075 96.9584 90.6371 96.9584C96.6674 96.9584 101.556 95.8375 101.556 94.454C101.556 93.5057 99.2564 92.68 95.8671 92.2555Z" fill="url(#paint5_linear_152_4462)"/>
@@ -37,8 +37,8 @@ export default function EventSvg() {
         <rect x="0.5" y="0.5" width="181" height="261" rx="15.5" stroke="url(#paint7_linear_152_4462)"/>
         </g>
         <defs>
-        <filter id="filter0_i_152_4462" x="0" y="0" width="182" height="270" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+        <filter id="filter0_i_152_4462" x="0" y="0" width="182" height="270" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+        <feFlood floodOpacity="0" result="BackgroundImageFix"/>
         <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
         <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
         <feOffset dy="8"/>
@@ -47,42 +47,42 @@ export default function EventSvg() {
         <feColorMatrix type="matrix" values="0 0 0 0 0.188235 0 0 0 0 0.301961 0 0 0 0 0.0745098 0 0 0 1 0"/>
         <feBlend mode="normal" in2="shape" result="effect1_innerShadow_152_4462"/>
         </filter>
-        <filter id="filter1_f_152_4462" x="-66.2328" y="-84.0585" width="315.432" height="290.267" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+        <filter id="filter1_f_152_4462" x="-66.2328" y="-84.0585" width="315.432" height="290.267" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+        <feFlood floodOpacity="0" result="BackgroundImageFix"/>
         <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
         <feGaussianBlur stdDeviation="35.05" result="effect1_foregroundBlur_152_4462"/>
         </filter>
         <linearGradient id="paint0_linear_152_4462" x1="63.0344" y1="49.9063" x2="4" y2="49.9063" gradientUnits="userSpaceOnUse">
-        <stop stop-color="#393939"/>
-        <stop offset="1" stop-color="#383636" stop-opacity="0"/>
+        <stop stopColor="#393939"/>
+        <stop offset="1" stopColor="#383636" stopOpacity="0"/>
         </linearGradient>
         <linearGradient id="paint1_linear_152_4462" x1="119.366" y1="47.0938" x2="178.4" y2="47.0938" gradientUnits="userSpaceOnUse">
-        <stop stop-color="#393939"/>
-        <stop offset="1" stop-color="#383636" stop-opacity="0"/>
+        <stop stopColor="#393939"/>
+        <stop offset="1" stopColor="#383636" stopOpacity="0"/>
         </linearGradient>
         <linearGradient id="paint2_linear_152_4462" x1="75.3302" y1="94.5" x2="75.3302" y2="170.16" gradientUnits="userSpaceOnUse">
-        <stop stop-color="#2F4B13"/>
-        <stop offset="1" stop-color="#0E1309"/>
+        <stop stopColor="#2F4B13"/>
+        <stop offset="1" stopColor="#0E1309"/>
         </linearGradient>
         <linearGradient id="paint3_linear_152_4462" x1="110.314" y1="96.0998" x2="41.4934" y2="166.379" gradientUnits="userSpaceOnUse">
-        <stop stop-color="#9AF73F"/>
-        <stop offset="1" stop-color="#090E00" stop-opacity="0"/>
+        <stop stopColor="#9AF73F"/>
+        <stop offset="1" stopColor="#090E00" stopOpacity="0"/>
         </linearGradient>
         <linearGradient id="paint4_linear_152_4462" x1="70.5552" y1="73.7573" x2="111.896" y2="115.098" gradientUnits="userSpaceOnUse">
-        <stop stop-color="#20340D"/>
-        <stop offset="1" stop-color="#0B1106"/>
+        <stop stopColor="#20340D"/>
+        <stop offset="1" stopColor="#0B1106"/>
         </linearGradient>
         <linearGradient id="paint5_linear_152_4462" x1="90.6371" y1="86.9026" x2="90.6371" y2="96.9584" gradientUnits="userSpaceOnUse">
-        <stop stop-color="#AFE760"/>
-        <stop offset="1" stop-color="#FBFFFB"/>
+        <stop stopColor="#AFE760"/>
+        <stop offset="1" stopColor="#FBFFFB"/>
         </linearGradient>
         <linearGradient id="paint6_linear_152_4462" x1="90.6373" y1="97.4155" x2="90.6373" y2="101.578" gradientUnits="userSpaceOnUse">
-        <stop stop-color="#AFE760"/>
-        <stop offset="1" stop-color="#FBFFFB"/>
+        <stop stopColor="#AFE760"/>
+        <stop offset="1" stopColor="#FBFFFB"/>
         </linearGradient>
         <linearGradient id="paint7_linear_152_4462" x1="91" y1="1" x2="91" y2="154.5" gradientUnits="userSpaceOnUse">
-        <stop stop-color="#A6FF00"/>
-        <stop offset="1" stop-color="#233A02" stop-opacity="0.41"/>
+        <stop stopColor="#A6FF00"/>
+        <stop offset="1" stopColor="#233A02" stopOpacity="0.41"/>
         </linearGradient>
         <clipPath id="clip0_152_4462">
         <rect x="1" y="1" width="180" height="260" rx="15" fill="white"/>
