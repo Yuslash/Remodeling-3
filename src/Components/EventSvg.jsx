@@ -1,5 +1,4 @@
 import './EventSvg.css'
-import card from '/card.svg'
 import React from 'react'
 
 export default function EventSvg() {
