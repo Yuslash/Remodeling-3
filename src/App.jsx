@@ -1,4 +1,4 @@
-import Events from "./Components/Events";
+import Events from "./Components/Events/Events";
 import Experience from "./Components/Experiece";
 
 export default function App() {

@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+.events-navbar {
+    background: #2B295B;
+}
+
+.company-name {
+    color: #FFF;
+    text-align: center;
+    font-family: "Jost", serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%; 
+}
+
+.navs-content {
+    color: #FFF;
+    text-align: center;
+    font-family: "Jost", serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%; 
+}
+
+.navbar-profile {
+    color: #FFF;
+    text-align: center;
+    font-family: "Jost", serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%; 
+}
