@@ -1,7 +1,8 @@
-import EventSvg from './EventSvg.jsx'
 
 export default function Events() {
   return (
-    <EventSvg />
+    <div>
+      how are you mate this is sibikrishna
+    </div>
   )
 }
