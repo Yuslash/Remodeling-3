@@ -5,7 +5,7 @@ export default function EventMainBody() {
     console.log(window.innerWidth * 0.75)
 
     return (
-        <div className="h-full bg-orange-500 flex-1 flex ">
+        <div className="h-full flex-1 flex ">
             
             {/* Cards Container Starts here */}
                 <div  className="acting-body w-[75vw] flex justify-center items-center">

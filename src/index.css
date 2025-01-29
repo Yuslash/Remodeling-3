@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+body {
+  background-color: black;
+}
+
 /* Target the path with id 'sibi' inside the SVG */
 .rotating-svg-container svg #sibi {
     transform-origin: center center;
