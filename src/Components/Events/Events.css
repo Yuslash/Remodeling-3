@@ -33,3 +33,14 @@
     font-weight: 600;
     line-height: 100%; 
 }
+
+.acting-body {
+    background: radial-gradient(31.38% 31.38% at 50% 50%, #95FF00 0%, #050C06 100%);
+}
+
+.acting-card {
+    border-radius: 15px;
+    border: 1px solid #215302;
+    background: rgba(0, 15, 1, 0.50);
+    backdrop-filter: blur(145.8000030517578px);
+}
