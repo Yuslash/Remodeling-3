@@ -4,7 +4,7 @@ import React from 'react';
 export default function EventSvg() {
     return (
         <svg width="182" height="262" viewBox="0 0 182 262" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g id="Frame83" className="flex-shrink-0" style={{ flexShrink: 0 }}  filter="url(#filter0_i_152_4462)">
+<g id="Frame83" className="w-full h-full" style={{ flexShrink: 0 }}  filter="url(#filter0_i_152_4462)">
 <g clipPath="url(#clip0_152_4462)">
 <rect x="1" y="1" width="180" height="260" rx="15" fill="black"/>
 <g id="stars">
