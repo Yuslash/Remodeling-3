@@ -20,21 +20,17 @@
     transition: all 0.3s ease;
   }
 
-  .shapeofthe {
-    display: flex;
-    padding-left: 15px;
-    width: 500px;
-    height: 30px;
-    background-color: lightgray;
-    clip-path: polygon(calc(10% + 10px) 0%, 100% 0%, calc(90% - 10px) 100%, 0% 100%);
-  }
-  
+/* CSS */
+.progress-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: blue ; /* Container width */
+}
 
-  .innershapeofthe {
-    display: flex;
-    padding: 10px;
-    width: 460px;
-    height: 20px;
-    background-color: rgb(17, 12, 12);
-    clip-path: polygon(calc(10% + 10px) 0%, 100% 0%, calc(90% - 10px) 100%, 0% 100%);
-  }
+.progress-svg {
+  height: 50px; /* Directly control height */
+  width: auto; /* Width scales automatically */
+  transform: scale(1.5); /* Simple scaling */
+  transform-origin: left center; /* Adjust as needed */
+}
