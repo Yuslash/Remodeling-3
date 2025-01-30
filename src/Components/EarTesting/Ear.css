@@ -19,4 +19,22 @@
   #earleft path, #earright path {
     transition: all 0.3s ease;
   }
+
+  .shapeofthe {
+    display: flex;
+    padding-left: 15px;
+    width: 500px;
+    height: 30px;
+    background-color: lightgray;
+    clip-path: polygon(calc(10% + 10px) 0%, 100% 0%, calc(90% - 10px) 100%, 0% 100%);
+  }
   
+
+  .innershapeofthe {
+    display: flex;
+    padding: 10px;
+    width: 460px;
+    height: 20px;
+    background-color: rgb(17, 12, 12);
+    clip-path: polygon(calc(10% + 10px) 0%, 100% 0%, calc(90% - 10px) 100%, 0% 100%);
+  }
