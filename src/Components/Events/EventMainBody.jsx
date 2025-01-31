@@ -1,5 +1,6 @@
 import EventBadgePanel from "./EventBadgePanel"
 import EventCardActingBody from "./EventCardActingBody"
+import MiniLeaderBoard from "./MiniLeaderBoard"
 
 export default function EventMainBody() {
 
@@ -13,8 +14,9 @@ export default function EventMainBody() {
             {/* Cards Container Ends here */}
 
             {/* Leveling Container Starts here */}
-                <div className="right-badgebanner w-[30vw]">
+                <div className="right-badgebanner w-[30vw] flex flex-col">
                     <EventBadgePanel />
+                    <MiniLeaderBoard />
                 </div>
             {/* Leveling Container Ends here */}
         </div>

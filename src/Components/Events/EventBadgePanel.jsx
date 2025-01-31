@@ -11,16 +11,16 @@ export default function EventBadgePanel() {
 
     return (
         <div className="main-badgeContainer flex flex-col p-[10px]">
-            <div className="badge-holder h-[260px] bg-black flex justify-center items-center">
+            <div className="badge-holder h-[290px] bg-black flex justify-center items-center">
                 <img className="w-[200px] h-[200px]" src="badgecrown.png" />
             </div>
-            <div className="badge-content flex pl-[10px] py-[5px] pr-[10px]">
-                <div className="content-badge gap-[8px] flex flex-col">
+            <div className="badge-content flex ">
+                <div className="content-badge gap-[8px] flex flex-col justify-start">
                     <div className="title-cyber">CYBER SPECIALIST</div>
                     <div className="desc-cyber">Elite Access To cutting-Edge Security tools</div>
                     
                     {/* Updated progress bar with dynamic values */}
-                    <svg width="225" height="13" viewBox="0 0 225 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg className="progress-badge" width="225" height="13" viewBox="0 0 225 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M0 12.9167L10.6235 0H225L207.022 12.9167H0Z" fill="black" fillOpacity="0.56"/>
                         <path d={`M8 9L12.9348 3H${endX}L${endL} 9H8Z`} fill="#0AFF9D"/>
                     </svg>
