@@ -78,3 +78,64 @@
     line-height: normal;
     cursor: pointer;
 }
+
+/* right side */
+
+.title-cyber {
+    color: #7F7;
+    font-family: Jost;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%; /* 14px */
+    letter-spacing: -1px;
+}
+
+.desc-cyber {
+    color: #77B279;
+    font-family: Jost;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 10px */
+}
+
+.badge-holder {
+    border-radius: 15px 15px 0px 0px;
+    border-top: 1px solid #589465;
+    border-right: 1px solid #589465;
+    border-left: 1px solid #589465;
+    background: #051202;
+}
+
+.badge-content {
+    border-radius: 0px 0px 30px 15px;
+    border: 1px solid #589465;
+    background: #395C29;
+}
+
+.numberpercent {
+    color: #FFF;
+    text-align: center;
+    font-family: Jost;
+    font-size: 8px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 100%; 
+}
+
+.upcoming-holder {
+    align-items: center;
+    justify-content: end;
+    gap: 5px;    
+}
+
+.upcoming-style {
+    text-align: center;
+    font-family: Jost;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: -1px;
+}

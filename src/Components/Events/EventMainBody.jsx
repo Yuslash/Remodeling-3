@@ -13,7 +13,7 @@ export default function EventMainBody() {
             {/* Cards Container Ends here */}
 
             {/* Leveling Container Starts here */}
-                <div className="w-[25vw] bg-green-300">
+                <div className="w-[30vw] bg-green-300">
                     <EventBadgePanel />
                 </div>
             {/* Leveling Container Ends here */}
