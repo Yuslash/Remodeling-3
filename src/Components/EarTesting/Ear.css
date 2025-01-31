@@ -40,7 +40,38 @@
 }
 
 #earleft {
-  animation: nonesense 3s alternate infinite;
+  transform: translateY(0px);
+  animation: nonesense 3s ease-in-out infinite;
+}
+
+#earright {
+  transform: translateY(0px);
+  animation: nonesense 3s ease-in-out infinite;
+  animation-delay: 0.4s;
+}
+
+#righthand {
+  transform: translateY(0px);
+
+  animation: nonesense 3s ease-in-out infinite;
+}
+
+
+#lefthand {
+  transform: translateY(0px);
+  animation: nonesense 3s ease-in-out infinite;
+  animation-delay: 0.7s;
+}
+
+#head {
+  transform: translateY(0px);
+  animation: makesense 3s ease-in-out infinite;
+  animation-delay: 0.7s;
+}
+
+#leg {
+  transform: translateY(0px);
+  animation: makesense 3s ease-in-out infinite;
 }
 
 @keyframes nonesense {
@@ -48,11 +79,48 @@
   0% {
     transform: translateY(0);
   }
+  25% {
+    transform: translateY(-1px);
+  }
   50% {
-    transform: translateY(-2px);
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(1px);
   }
   100% {
     transform: translateY(0);
   }
 
+}
+
+@keyframes makesense {
+
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-1px);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  75% {
+    transform: translateX(1px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+
+}
+#avatar:hover ~ * {
+  animation-play-state: paused;
+}
+
+/* Updated hover effect */
+#avatar:hover ~ #earleft,
+#avatar:hover ~ #earright,
+#avatar:hover ~ #head,
+#avatar:hover ~ #leg {
+  transform: translateY(-5px);
 }
