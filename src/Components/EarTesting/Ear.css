@@ -40,23 +40,19 @@
 }
 
 #earleft {
-  transform: rotate(0deg) translateY(0px); /* Explicit base state */
-  transform-origin: left bottom;
-  transition: transform 0.6s ease-in-out; /* Longer duration for smoother return */
+  animation: nonesense 3s alternate infinite;
 }
 
-@keyframes rotateFloat {
+@keyframes nonesense {
+
   0% {
-    transform: rotate(0deg) translateY(0px); 
+    transform: translateY(0);
   }
   50% {
-    transform: rotate(-180deg) translateY(-5px);
+    transform: translateY(-2px);
   }
   100% {
-    transform: rotate(-360deg) translateY(0px); /* Match base state */
+    transform: translateY(0);
   }
-}
 
-#avartar:hover ~ #earleft {
-  animation: rotateFloat 2s ease-in-out infinite;
 }
