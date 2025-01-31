@@ -6,7 +6,7 @@ export default function App() {
 
   return (
     <div className="absoulte top-0 left-0 w-full h-screen ">
-      <EarComplete />
+      <Events />
     </div>
   )
 

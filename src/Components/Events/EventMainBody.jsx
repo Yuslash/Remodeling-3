@@ -1,3 +1,4 @@
+import EventBadgePanel from "./EventBadgePanel"
 import EventCardActingBody from "./EventCardActingBody"
 
 export default function EventMainBody() {
@@ -12,9 +13,9 @@ export default function EventMainBody() {
             {/* Cards Container Ends here */}
 
             {/* Leveling Container Starts here */}
-                {/* <div className="w-[25vw] bg-green-300">
-                    not developed yuet
-                </div> */}
+                <div className="w-[25vw] bg-green-300">
+                    <EventBadgePanel />
+                </div>
             {/* Leveling Container Ends here */}
         </div>
     )

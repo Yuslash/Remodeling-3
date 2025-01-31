@@ -1,32 +1,61 @@
 .sambar {
   overflow: visible;
+  transform: scale(0.5);
 }
 
 #avartar {
   cursor: pointer;
+  border-radius: 15px;
 }
 
-#lefthand, #righthand {
-  transform: translateY(0);
-  transform-origin: left bottom;
+#lefthand, #righthand, #earleft, #earright, #head, #leg {
+  transform: translateY(0) translateX(0);
   transition: transform 0.3s ease-in-out;
 }
 
-@keyframes how {
-  0%, 100% {
-    transform: translateY(0);
-  } 50% {
-    transform: translateY(10px);
-  }
+#avartar:hover ~ #head {
+  transform: translateY(-30px);
 }
 
-#avartar:hover ~ #lefthand {
-  transform: translateY(-10px);
-  animation: how 3s infinite;
-  
+#avartar:hover ~ #leg {
+  transform: translateY(30px);
 }
 
-#avartar:hover ~ #righthand {
-  transform: translateY(10px);
-  animation: how 4s infinite;
+#avartar:hover ~ #earleft
+{
+  transform: translateY(-60px) translateX(-60px);
 }
+
+#avartar:hover ~ #earright
+{
+  transform: translateY(-60px) translateX(60px);
+}
+
+
+#avartar:hover ~ #lefthand
+{
+  transform: translateY(60px) translateX(-60px);
+}
+
+#avartar:hover ~ #righthand
+{
+  transform: translateY(60px) translateX(60px);
+}
+
+.rounded-avatar {
+  clip-path: inset(0% round 30px); /* Creates a rounded rectangle with 15px radius */
+}
+
+/* .progress-container {
+  width: 225px;
+  display: flex;
+  justify-content: start;
+  background-color: blue;
+}
+
+.progress-svg {
+  height: 12px; 
+  width: auto; 
+  transform: scale(2); 
+  transform-origin: left center;
+} */

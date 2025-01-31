@@ -3,7 +3,7 @@ import { useControls } from 'leva'
 
 export default function Progress() {
     const { wining } = useControls({
-        wining: { value: 250, min: 21, max: 640, step: 0.01 }
+        wining: { value: 225, min: 21, max: 640, step: 0.01 }
     })
 
     const startX = 30.2871
