@@ -12,7 +12,7 @@ export default function Progress() {
 
     return (
         <div className='progress-container'>
-            <svg className='progress-svg' width="700" height="140" viewBox="0 0 700 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg className='progress-svg' width="700" height="140" viewBox="0 0 700 140" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g id="Group 60">
                 <path id="progressholder" d="M12 96L37.4964 65H700L656 96H12Z" fill="black" fillOpacity="0.56"/>
                 <g id="prgoresbar" filter="url(#filter0_d_135_7170)">

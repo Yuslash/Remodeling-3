@@ -1,24 +1,24 @@
 /* Add hover effect to the container */
 .ear-container {
-    display: inline-block;
-    cursor: pointer;
-  }
-  
-  .ear-container:hover #earleft {
-    transform: translate(-5px, -5px) rotate(-3deg);
-  }
-  
-  .ear-container:hover #earright {
-    transform: translate(5px, -5px) rotate(3deg);
-  }
-  
-  #earleft, #earright {
-    transition: transform 0.3s ease;
-  }
-  
-  #earleft path, #earright path {
-    transition: all 0.3s ease;
-  }
+  display: inline-block;
+  cursor: pointer;
+}
+
+.ear-container:hover #earleft {
+  transform: translate(-5px, -5px) rotate(-3deg);
+}
+
+.ear-container:hover #earright {
+  transform: translate(5px, -5px) rotate(3deg);
+}
+
+#earleft, #earright {
+  transition: transform 0.3s ease;
+}
+
+#earleft path, #earright path {
+  transition: all 0.3s ease;
+}
 
 /* CSS */
 .progress-container {
