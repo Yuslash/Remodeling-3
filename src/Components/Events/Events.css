@@ -139,3 +139,8 @@
     line-height: 100%;
     letter-spacing: -1px;
 }
+
+.right-badgebanner {
+    background: #000;
+    backdrop-filter: blur(200px);
+}

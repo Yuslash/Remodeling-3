@@ -2,7 +2,7 @@ import { useControls } from "leva";
 
 export default function EventBadgePanel() {
     const { width } = useControls({
-        width: { value: 225, min: 0, max: 184, step: 0.01 }
+        width: { value: 0, min: 0, max: 184, step: 0.01 }
     });
 
     const startX = 30.2871;
@@ -31,7 +31,7 @@ export default function EventBadgePanel() {
                     </div>
                 </div>
                 <div className="upcoming-holder w-full flex">
-                    <div className="upcoming-style">UPCOMING NEXT</div>
+                    <div className="upcoming-style text-yellow-500">UPCOMING NEXT</div>
                     <img className="w-[40px]" src="conq.png" />
                 </div>
             </div>
