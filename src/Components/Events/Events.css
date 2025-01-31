@@ -183,3 +183,27 @@
         margin-right: 60px;
     }
 }
+
+.content-row {
+    color: #FFF;
+    text-align: center;
+    font-family: Jost;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%; /* 16px */
+}
+
+.player-row {
+    color: #FFF;
+    font-family: Jost;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%; /* 14px */
+}
+
+.playerslist-column {
+    -ms-overflow-style: none; /* Hide scrollbar for IE/Edge */
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+}
