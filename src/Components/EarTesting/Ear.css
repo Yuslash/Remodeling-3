@@ -33,3 +33,29 @@
   transform: scale(1.5); /* Simple scaling */
   transform-origin: left center; /* Adjust as needed */
 }
+
+.sambar {
+  transform: scale(2);
+  cursor: pointer;
+}
+
+#earleft {
+  transform: rotate(0deg) translateY(0px) translateX(0px);
+  transform-origin: left bottom;
+  transition: transform 0.3s ease-in-out;
+}
+
+#avartar:hover ~ #earleft {
+  transform: rotate(-10deg) translateY(-60px) translateX(-60px);
+}
+
+#earright {
+  transform: rotate(0deg) translateY(0px) translateX(0px);
+  transform-origin: right bottom;
+  transition: transform 0.3s ease-in-out
+}
+
+#avartar:hover ~ #earright {
+  transform: rotate(10deg) translateY(-60px) translateX(60px);
+}
+

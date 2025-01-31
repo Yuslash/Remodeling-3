@@ -1,7 +1,9 @@
+import './Ear.css'
+
 export default function EarSvg() {
   
   return (
-    <svg style={{ transform: 'scale(3)' }}  width="60" height="66" viewBox="0 0 60 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg className="sambar overflow-visible" width="60" height="66" viewBox="0 0 60 66" fill="none" xmlns="http://www.w3.org/2000/svg">
       <g id="target">
       <g id="leg">
       <g id="Group 224">
