@@ -1,0 +1,33 @@
+.cube1 {
+    position: relative;
+    width: 10%;
+    height: 10px;
+    background-color: red;
+    z-index: 1;
+}
+
+.cube2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10%;
+    height: 10px;
+    background-color: blue;
+    transform: translateX(0);
+    transition: transform 0.3s ease-in-out;
+    animation: mover 3s infinite;
+    z-index: 2;
+}
+
+@keyframes mover {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
