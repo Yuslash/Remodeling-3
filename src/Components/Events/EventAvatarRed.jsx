@@ -1,7 +1,12 @@
+import '../EarTesting/Ear.css'
+
 export default function EventAvatarRed() {
     return (
-        <svg width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg className='sambar' width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
     <g id="target">
+    <g id="avartar">
+    <image href="/sambar.png" width="17.08" height="17.08" x="3.59961" y="5.34204" fill="white"/>
+    </g>
     <g id="leg">
     <g id="Group 224">
     <path id="Vector 14" d="M11.2727 23.2329L12 22.6268V22.3844L2.66667 22.2632L0 22.7481L0.727272 23.2329H11.2727Z" fill="#080611"/>
@@ -53,9 +58,6 @@ export default function EventAvatarRed() {
     <path d="M15.5645 4.38477L14.8716 5.23325H15.9605L16.6534 4.38477H15.5645Z" fill="url(#paint13_linear_233_101)"/>
     </g>
     </g>
-    </g>
-    <g id="avatar">
-    <image href="/sambar.png" width="17.08" height="17.08" x="3.59961" y="5.34204" fill="white"/>
     </g>
     <g id="earleft">
     <path id="ear" d="M5.2002 5.14209H12.2002L8.2002 5.34209L3.8002 10.1421V13.5421L1.2002 7.94209V0.14209L5.2002 5.14209Z" fill="url(#paint14_linear_233_101)" stroke="#2A2647" strokeWidth="0.1"/>
