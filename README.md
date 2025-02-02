@@ -52,7 +52,7 @@ Keep your dependencies updated, or bugs will start crawling in. 🐞
 
 ---
 
->[!NOTICE]
+>[!NOTE]
 > Keep your dependencies updated, or bugs will start crawling in. 🔒
 
 ---
