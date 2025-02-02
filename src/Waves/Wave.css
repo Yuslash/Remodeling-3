@@ -1,33 +1,37 @@
 .cube1 {
     position: relative;
-    width: 10%;
-    height: 10px;
-    background-color: red;
-    z-index: 1;
+    width: 100px;
+    height: 100px;
+    background-color: white;
 }
 
-.cube2 {
+.cube1::before {
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
-    width: 10%;
+    width: 10px;
     height: 10px;
     background-color: blue;
-    transform: translateX(0);
+    transform: translateX(0), translateY(0);
     transition: transform 0.3s ease-in-out;
-    animation: mover 3s infinite;
-    z-index: 2;
+    animation: squre 3s infinite;
 }
 
-@keyframes mover {
+@keyframes squre {
     0% {
         transform: translateX(0);
     }
-    50% {
+    25% {
         transform: translateX(90px);
     }
+    50% {
+        transform: translateY(90px);
+    }
+    75% {
+        transform: translateX(-90px);
+    }
     100% {
-        transform: translateX(0);
+        transform: translateY(-90px);
     }
 }
-
