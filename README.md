@@ -45,10 +45,6 @@ $ npm start
 >[!CAUTION]
 > Handle errors gracefully... or they'll handle you! 🚨
 
----
-
-## 🔒 Stay Secure
-Keep your dependencies updated, or bugs will start crawling in. 🐞
 
 ---
 
