@@ -1,5 +1,7 @@
 # 🎉 Welcome to the Ultimate Event Madness! 🏆
 
+---
+
 > A leaderboard, badges, avatars, and events? Oh my! 🎭 Buckle up because this project is loaded with fun, animations, and a sprinkle of chaos! 🚀
 
 This project brings together a **mini leaderboard**, event components, avatars, badges, and a stylish event page—all wrapped in smooth animations and dynamic interactions. Whether you're tracking scores, flexing badges, or just vibing with cool SVG avatars, this project has got you covered! 🎨🔥
