@@ -39,7 +39,7 @@ $ cd YourRepo
 $ npm install
 
 # Start the show!
-$ npm start
+$ npm run dev
 ```
 
 ---
