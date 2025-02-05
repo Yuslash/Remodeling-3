@@ -30,10 +30,10 @@ This project brings together a **mini leaderboard**, event components, avatars, 
 ## 🚀 Installation & Setup
 ```bash
 # Clone this beast
-$ git clone https://github.com/Yuslash/YourRepo.git
+$ git clone https://github.com/Yuslash/Remodeling-3.git
 
 # Move into the madness
-$ cd YourRepo
+$ cd Remodeling-3
 
 # Install dependencies (Trust me, you'll need them)
 $ npm install
