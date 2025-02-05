@@ -9,7 +9,7 @@ This project brings together a **mini leaderboard**, event components, avatars, 
 ---
 
 >[!IMPORTANT]
-> Nothing Just An Inchident. 🎂
+> Nothing Just An Inchident. 🏎️
 
 ---
 
