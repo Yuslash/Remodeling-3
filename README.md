@@ -9,7 +9,7 @@ This project brings together a **mini leaderboard**, event components, avatars, 
 ---
 
 >[!IMPORTANT]
-> This project is important! Just like remembering your best friend’s birthday. 🎂
+> Nothing Just An Inchident. 🎂
 
 ---
 
