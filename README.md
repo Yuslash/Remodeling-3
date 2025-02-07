@@ -9,7 +9,7 @@ This project brings together a **mini leaderboard**, event components, avatars, 
 ---
 
 >[!IMPORTANT]
-> This project is important! Just like remembering your best friend’s birthday. 🎂
+> Nothing Just An Inchident. 🏎️
 
 ---
 
@@ -30,16 +30,16 @@ This project brings together a **mini leaderboard**, event components, avatars, 
 ## 🚀 Installation & Setup
 ```bash
 # Clone this beast
-$ git clone https://github.com/Yuslash/YourRepo.git
+$ git clone https://github.com/Yuslash/Remodeling-3.git
 
 # Move into the madness
-$ cd YourRepo
+$ cd Remodeling-3
 
 # Install dependencies (Trust me, you'll need them)
 $ npm install
 
 # Start the show!
-$ npm start
+$ npm run dev
 ```
 
 ---
