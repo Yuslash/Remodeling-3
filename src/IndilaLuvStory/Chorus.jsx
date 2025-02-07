@@ -4,30 +4,93 @@ import AccordionItem from "./AccordionItem"
 
 export default function Chorus() {
 
-    const [data, setData] = useState([])
+    const [arenadata, setArenaData] = useState(null)
 
-    useEffect(() => {
+    //update the flag fetch api here
+    const updateFlag = async (itemId, accordionId, newFlag) => {
 
-        const handleSubmit = async () => {
+    const response = await fetch(``, {
+        method: "PUT",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ newFlag })
+    })
 
-            const response = await fetch('http://localhost:4000/api/arenaData')
+    if (!response.ok) {
+        throw new Error("Failed to update flag")
+    }
 
-            const data = await response.json()
+    if (!newFlag) {
+        alert("Flag Cannot be Empty")
+    } else {
 
-            console.log(data)
-            
+        // alert("Flag is Added")
+
+        const { data: updatedArenaData } = await response.json()
+    
+        // update the state with the updated arenaData, including the new accordion item
+        setArenaData(updatedArenaData)
+    }
+
+    }
+
+    // the logic here is to add the additinonal Accordion by clicking at the adding
+    const addAccordion = async () => {
+        
+        const response = await fetch('', {
+            method: "PATCH",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                accordTitle: "New Accordion Item",
+                flag: ""
+            }),
+        })
+    
+        if (!response.ok) {
+            console.error("Failed to add accordion")
+            return
+        }
+    
+        const { data: updatedArenaData } = await response.json()
+    
+        // update the state with the updated arenaData, including the new accordion item
+        setArenaData(updatedArenaData)
+}
+    
+
+    //here i write a logic for to remove the selected accordion
+    const removeAccordion = async (arenaId, accordionId) => {
+
+        const response = await fetch(``, {
+            method: "DELETE",
+            headers: {
+                "Content-Type": "application/json"
+            }
+        })
+
+        const data = await response.json()
+
+        if(response.ok) {
+            setArenaData((prevData) => ({
+                ...prevData,
+                accordion: prevData.accordion.filter(item => item._id !== accordionId)
+            }))
         }
 
-        handleSubmit()
+        
 
-    }, [])
-
-    const accordionData = [
-        { id: 1, title: 'Accordion Title 1' },
-        { id: 2, title: 'Accordion Title 2' },
-        { id: 3, title: 'Accordion Title 3' },
-        { id: 4, title: 'Accordion Title 4' },
-      ]
+    }
+    
+    // from this area we are fetching the full data from the arenaData
+    
+    useEffect(() => {
+        fetch('')
+            .then((res) => res.json())
+            .then((result) => setArenaData(result.data[0]))
+    },[])
     
 
     //we have the issue that text is while editing the re-render which resets the caret position and make it feel like the text is reversing
@@ -37,7 +100,7 @@ export default function Chorus() {
         
         const text = textRef.current.innerText
 
-        const response = await fetch('http://localhost:4000/api/saveText', {
+        const response = await fetch('', {
             method: 'POST',
             headers: {"Content-Type": "application/json"},
             body: JSON.stringify({text}),
@@ -48,24 +111,44 @@ export default function Chorus() {
         }
     }
 
+    
+
     return (
         <div className="absoulte top-0 left-0 w-full h-screen bg-[#303841] text-white">
             <EventHeader />
             <div className="w-full bg-white flex flex-col">
-                <div className="body-content px-[100px] py-[45px] w-full bg-[#253C49] flex gap-[100px] items-center justify-between">
+                <div className="body-content px-[100px] py-[45px] w-full bg-[#253C49] flex gap-[100px] items-center justify-start">
                     <div className="w-[150px] h-[150px] bg-cyan-500 rounded-full flex-shrink-0"></div>
                     <div className="flex flex-col">
-                        <div className="text-white text-2xl font-semibold leading-normal mb-[25px]">To Find A Flag Inside</div>
-                        <div className="text-white text-[19px] font-semibold leading-7">A suspect’s abSandoned laptop holds a corrupted image file, potentially hiding vital clues. The victim, a skilled tech enthusiast, had been working on a secret project before their death. This corrupted image may hold the key to unraveling the mystery. Your task is to extract the hidden flag from within the distorted file.</div>
+                        <div className="text-white text-2xl font-semibold leading-normal mb-[25px]">{arenadata?.title || "Loading..."}</div>
+                        <div className="text-white text-[19px] font-semibold leading-7">{arenadata?.description || "Loading..." }</div>
                     </div>
                 </div>
                 <div className="accordianContainer px-[45px] py-[20px] w-full bg-[#313A43] flex flex-col">
                     <div className="accordio-holder flex flex-col w-full px-[25px] py-[25px] gap-4 bg-[#37424F] rounded-sm"> 
-                    {accordionData.map((item) => (
-                        <AccordionItem key={item.id} title={item.title} />
-                    ))}
+                    {arenadata?.accordion?.length > 0 ? (
+                        arenadata?.accordion?.map((item) => 
+                        {   
+
+                            return (
+                                // Change this in your AccordionItem component
+                                <AccordionItem
+                                flagPlaceholder={item.flag}
+                                updateFlag={(flagValue) => updateFlag(arenadata._id,item._id, flagValue)}
+                                onRemove={(id) => removeAccordion(arenadata._id, id)}
+                                itemId={item._id} // Use _id instead of id 👈
+                                key={item._id} // Simplify key
+                                title={item.accordTitle}
+                                />
+                                )
+                        })
+                    ) : (
+                        <p>There are no accordion...</p>
+                    )}
+
+
                     <div className="w-full flex justify-end">
-                            <div className="px-6 py-3 bg-blue-500 rounded-sm">Add</div>
+                            <div onClick={addAccordion} className="px-6 py-3 bg-blue-500 rounded-sm cursor-pointer hover:bg-blue-600">Add</div>
                     </div>
                     </div>
                 </div>
