@@ -2,7 +2,6 @@ import EarComplete from "./Components/EarTesting/EarComplete";
 import Events from "./Components/Events/Events";
 import Experience from "./Components/Experiece";
 import Chorus from "./IndilaLuvStory/Chorus";
-import TestingOver from "./Waves/TestingOver";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 export default function App() {
